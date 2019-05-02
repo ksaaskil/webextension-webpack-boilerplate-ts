@@ -4,9 +4,9 @@ Boilerplate for building webextensions for Chrome and Firefox using [webpack](ht
 
 Adapted from [chrome-extension-webpack-boilerplate](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate) with the added features:
 
-- Refactored webpack for separate development and production builds
 - Support for TypeScript
 - Inclusion of [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts) for accessing browser APIs via [webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
+- Refactored webpack configuration for separate development and production configurations
 
 ## Running locally (in Chrome)
 
@@ -36,6 +36,8 @@ $ yarn start
 ```
 
 ## License
+
+This project acknowledges code from the following projects.
 
 ### [Chrome webextension boilerplate](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate)
 
