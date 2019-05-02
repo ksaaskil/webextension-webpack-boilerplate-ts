@@ -8,13 +8,6 @@ Adapted from [chrome-extension-webpack-boilerplate](https://github.com/samuelsim
 - Inclusion of [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts) for accessing browser APIs via [webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
 - Refactored webpack configuration for separate development and production configurations
 
-## Running locally (in Chrome)
-
-1. Run `yarn start` or `yarn build` to create bundle
-1. Open the Extension Management page by navigating to `chrome://extensions`.
-1. Enable Developer Mode by clicking the toggle switch next to Developer mode.
-1. Click the `Load unpacked` button and select `build/` directory.
-
 ## Development
 
 Install dependencies:
@@ -34,6 +27,16 @@ Run webpack development server with hot reloading:
 ```bash
 $ yarn start
 ```
+
+### Testing in Chrome
+
+1. Open the Extension Management page by navigating to `chrome://extensions`. Firefox: for loading the extension.
+1. Enable Developer Mode by clicking the toggle switch next to Developer mode.
+1. Click the `Load unpacked` button and select `build/` directory.
+
+### Testing in Firefox
+
+Follow the instructions [here](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#Trying_it_out), choosing `manifest.json` from `build/` directory.
 
 ## License
 
