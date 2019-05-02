@@ -1,0 +1,37 @@
+{
+  "name": "My webextension",
+  "version": "0.0.1",
+  "description": "Good times using webextensions",
+  "short_name": "MyWebExt",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "declarativeContent",
+    "downloads",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "run_at": "document_idle",
+      "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icon48.png"
+    },
+    "default_title": "Pop-up",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon48.png"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
